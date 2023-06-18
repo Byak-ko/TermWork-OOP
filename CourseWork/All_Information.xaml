@@ -1,0 +1,86 @@
+﻿<Window x:Class="CourseWork.All_Information"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork"
+        mc:Ignorable="d"
+        Title="Детальна інформація про експонат" Height="600" Width="1100">
+    <Grid x:Name="GridAll">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Others/Marble001_2K_Color.jpg" Stretch="UniformToFill" Opacity="0.5"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Image-->
+
+        <!--Image-->
+
+
+
+        <StackPanel Grid.Column="1" OpacityMask="#FFDC4141">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="NameLabel" Content="Назва:" VerticalAlignment="Center" Background="{x:Null}" FontSize="24" FontFamily="Gabriola" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="AuthorLabel" Content="Автор:" VerticalAlignment="Top"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="MovementLabel" Content="Мистецький напрямок:" VerticalAlignment="Top"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="TypeLabel" Content="Тип експонату:" VerticalAlignment="Top" FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="DateLabel" Content="Час створення:" VerticalAlignment="Top"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="AdditionalInfoLabel1" Content="Особливе поле1" VerticalAlignment="Top"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="AdditionalInfoLabel2" Content="Особливе поле 2" VerticalAlignment="Top"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,10,0"/>
+            </Grid>
+            <Grid Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="AdditionalInfoLabel3" Content="Опис" HorizontalAlignment="Center" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Center"  FontSize="24" FontFamily="Gabriola" Margin="0,-20,0,0"/>
+            </Grid>
+            <Grid Width="300" Height="317">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="153*"/>
+                </Grid.ColumnDefinitions>
+                <ScrollViewer Margin="0,0,0,10" Width="290" Height="280">
+                    <TextBlock x:Name="DescriptionBlock" TextWrapping="Wrap" Text="TextBlock" FontSize="14" FontFamily="Comic Sans MS" RenderTransformOrigin="0.488,0.805" Height="Auto" Width="Auto"/>
+                </ScrollViewer>
+            </Grid>
+        </StackPanel>
+        <Image x:Name="ImageExhibit" Margin="30,30,34,30"/>
+
+    </Grid>
+</Window>

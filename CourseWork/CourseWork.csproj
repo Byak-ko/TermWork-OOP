@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Images\Marble\**" />
+    <Compile Remove="Images\Other\**" />
+    <EmbeddedResource Remove="Images\Marble\**" />
+    <EmbeddedResource Remove="Images\Other\**" />
+    <None Remove="Images\Marble\**" />
+    <None Remove="Images\Other\**" />
+    <Page Remove="Images\Marble\**" />
+    <Page Remove="Images\Other\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Images\.jpg" />
+    <None Remove="Images\barokko-kartiny-1.jpg" />
+    <None Remove="Images\barokko-kartiny-2.jpg" />
+    <None Remove="Images\Others\Marble001_2K_Color.jpg" />
+    <None Remove="Images\Others\pause.png" />
+    <None Remove="Images\Others\play.png" />
+    <None Remove="Images\Others\rewind-arrows –next.png" />
+    <None Remove="Images\Others\rewind-arrows.png" />
+    <None Remove="Images\Others\skip.png" />
+    <None Remove="Images\Test.png" />
+    <None Remove="Images\TestPhoto.jpg" />
+    <None Remove="Images\TestPhoto.png" />
+    <None Remove="Images\Веронські_мармурові_леви.jpg" />
+    <None Remove="Images\Глек_золото_і_дві_мушлі_наутілуса.jpg" />
+    <None Remove="Images\Келих_з_морським_конем.jpg" />
+    <None Remove="Images\Мучеництво_святого_Матвія.jpg" />
+    <None Remove="Images\Покликання апостола Матвія.jpg" />
+    <None Remove="Images\Покликання апостола Матвія.png" />
+    <None Remove="Images\Покликання_апостола_Матвія.jpg" />
+    <None Remove="Images\Рельєфи_на_надгробку_родини_Вальє.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resourses\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\barokko-kartiny-1.jpg" />
+    <Resource Include="Images\barokko-kartiny-2.jpg" />
+    <Resource Include="Images\Others\Marble001_2K_Color.jpg" />
+    <Resource Include="Images\Others\pause.png" />
+    <Resource Include="Images\Others\play.png" />
+    <Resource Include="Images\Others\rewind-arrows –next.png" />
+    <Resource Include="Images\Others\rewind-arrows.png" />
+    <Resource Include="Images\Others\skip.png" />
+    <Resource Include="Images\Веронські_мармурові_леви.jpg" />
+    <Resource Include="Images\Глек_золото_і_дві_мушлі_наутілуса.jpg" />
+    <Resource Include="Images\Келих_з_морським_конем.jpg" />
+    <Resource Include="Images\Мучеництво_святого_Матвія.jpg" />
+    <Resource Include="Images\Покликання_апостола_Матвія.jpg" />
+    <Resource Include="Images\Рельєфи_на_надгробку_родини_Вальє.jpg" />
+  </ItemGroup>
+
+</Project>

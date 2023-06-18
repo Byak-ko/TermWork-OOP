@@ -1,0 +1,115 @@
+﻿<Window x:Class="CourseWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CourseWork"
+        mc:Ignorable="d"
+        Title="Створення екскурсії" Height="350" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/Others/Marble001_2K_Color.jpg" Stretch="UniformToFill" Opacity="0.5"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="406*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Background="#FFCC933F" Grid.ColumnSpan="2">
+            <StackPanel x:Name="CustomStackPanel" Margin="5,5,5,5" Background="#FFFEFFFB">
+                <Grid Height="42">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Мистецька течія" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Background="{x:Null}" FontSize="16" FontFamily="Century"/>
+                    <ComboBox x:Name="MovementComboBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" FontSize="16" FontFamily="Century">
+                        <ComboBoxItem Content=" " FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Бароко" FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Ренесанс" FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Готичне мистецтво" FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Імпресіонізм" FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Сучасне мистецтво" FontSize="16" FontFamily="Century"/>
+                    </ComboBox>
+                </Grid>
+                <Grid Height="42">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Автор" VerticalAlignment="Center" Width="55" Background="{x:Null}" FontSize="16" FontFamily="Century" Margin="73,0,0,0" HorizontalAlignment="Left"/>
+                    <ComboBox x:Name="AuthorComboBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" FontSize="16" FontFamily="Century"/>
+                </Grid>
+                <Grid Height="42">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Тип експонату" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Background="{x:Null}" FontSize="16" FontFamily="Century"/>
+                    <ComboBox x:Name="TypeComboBox" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" FontSize="16" FontFamily="Century">
+                        <ComboBoxItem Content=" " FontSize="16" FontFamily="Century"/>
+                        <ComboBoxItem Content="Прикладне мистецтво" FontSize="14"/>
+                        <ComboBoxItem Content="Живопис" FontSize="14"/>
+                        <ComboBoxItem Content="Скульптура" FontSize="14"/>
+                    </ComboBox>
+                </Grid>
+                <Grid Height="42">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Час створення" HorizontalAlignment="Center" VerticalAlignment="Center" Width="Auto" Background="{x:Null}" FontSize="16" FontFamily="Century"/>
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBox x:Name="DateFrom" TextWrapping="Wrap" Width="60" Height="25"/>
+                        <Label Content="-" Width="17" Height="26"/>
+                        <TextBox x:Name="DateTo" TextWrapping="Wrap" Width="60" Height="25"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            <StackPanel x:Name="RandomStackPanel" Margin="5,5,5,5" Background="#FFFEFFFB" d:IsHidden="True">
+                <Grid Height="44">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="160*"/>
+                        <ColumnDefinition Width="160*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Кількість" HorizontalAlignment="Center" VerticalAlignment="Center" Width="83" Background="{x:Null}" FontSize="16" FontFamily="Century"/>
+                    <TextBox x:Name="AmountRandom" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="120" Height="25" FontSize="16" FontFamily="Century"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+        <StackPanel VerticalAlignment="Top" Margin="0,5,406,0" Grid.ColumnSpan="2">
+            <Label Content="Вибір експонатів" Background="{x:Null}" FontSize="18" FontFamily="Century"/>
+            <RadioButton x:Name="RandomRadioButton" Content="Випадкова вибірка" VerticalContentAlignment="Center" Padding="5,5,5,5" Width="130" HorizontalAlignment="Left" Height="30" IsChecked="True" Checked="RandomRadioButton_Checked" Margin="10,0,0,0">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="CustomRadioButton" Content="Налаштувати вибірку" VerticalContentAlignment="Center" Padding="5,5,5,5" Width="150" Height="30" HorizontalAlignment="Left" Checked="CustomRadioButton_Checked" Background="White" Margin="10,0,0,0">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </StackPanel>
+        <Button Content="Сформувати екскурсію" HorizontalAlignment="Center" Margin="0,215,0,0" VerticalAlignment="Top" Height="30" Width="156" Click="Button_Click" Background="#00000000">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFC30707" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <StackPanel VerticalAlignment="Top" Margin="0,137,406,0" Grid.ColumnSpan="2">
+            <RadioButton x:Name="ListRadioButton" Content="Перегляд експонатів" VerticalContentAlignment="Center" IsChecked="True" HorizontalAlignment="Left" Padding="5,5,5,5" Width="150" Height="30" Background="White" Margin="10,0,0,0">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+            <RadioButton x:Name="AutoRadioButton" Content="Режим презентації" VerticalContentAlignment="Center" Padding="5,5,5,5" Width="130" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0">
+                <RadioButton.LayoutTransform>
+                    <ScaleTransform ScaleX="1.2" ScaleY="1.2" />
+                </RadioButton.LayoutTransform>
+            </RadioButton>
+        </StackPanel>
+        <Label Content="Тип перегляду" HorizontalAlignment="Left" VerticalAlignment="Top" Width="Auto" Background="{x:Null}" Margin="10,109,0,0" FontSize="18" FontFamily="Century"/>
+    </Grid>
+</Window>
