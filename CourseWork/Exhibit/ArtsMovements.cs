@@ -4,4 +4,4 @@ public enum ArtsMovement
 {
     Baroque, Renaissance, GothicArt, Impressionism,  ContemporaryArt
 }
-//Neoclassicism,Abstract,
+//     0,        1,           2,            3 ,                 4

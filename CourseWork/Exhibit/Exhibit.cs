@@ -18,7 +18,7 @@ namespace CourseWork
         public ArtsMovement ArtMovement
         {
             get => artMovement;
-            private set => artMovement = value;
+            set => artMovement = value;
         }
         public abstract ExhibitType GetCategoryTypeOfExhibit();
 

@@ -75,6 +75,8 @@ namespace CourseWork
         private void AdditionalInfoButton_Click(object sender, RoutedEventArgs e)
         {
             timer.Stop();
+            imageBrush.ImageSource = new BitmapImage(new Uri("ImageOther/play.png", UriKind.RelativeOrAbsolute));
+            PlayStopButton.Background = imageBrush;
             All_Information all_Information = new All_Information(currentExhibit);
             all_Information.Show();
         }

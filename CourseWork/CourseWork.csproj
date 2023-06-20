@@ -21,8 +21,13 @@
 
   <ItemGroup>
     <None Remove="Images\.jpg" />
+    <None Remove="Images\24.jpg" />
     <None Remove="Images\barokko-kartiny-1.jpg" />
     <None Remove="Images\barokko-kartiny-2.jpg" />
+    <None Remove="Images\ChurchOfImmaculateConceptionOfVirginMaryIinHorodenka.jpg" />
+    <None Remove="Images\Jardin_du_Musee_Rodin_Paris_Le_Penseur.jpg" />
+    <None Remove="Images\Michelangelos_David.jpg" />
+    <None Remove="Images\Others\BackGround.png" />
     <None Remove="Images\Others\Marble001_2K_Color.jpg" />
     <None Remove="Images\Others\pause.png" />
     <None Remove="Images\Others\play.png" />
@@ -32,14 +37,46 @@
     <None Remove="Images\Test.png" />
     <None Remove="Images\TestPhoto.jpg" />
     <None Remove="Images\TestPhoto.png" />
+    <None Remove="Images\upturnedhouse.jpg" />
+    <None Remove="Images\Іван_Хреститель.jpg" />
+    <None Remove="Images\Арраси.JPG" />
+    <None Remove="Images\Богоматір_на_троні_Собор_у_Шартрі.jpg" />
+    <None Remove="Images\Вітрувіанська_людина.jpg" />
     <None Remove="Images\Веронські_мармурові_леви.jpg" />
+    <None Remove="Images\Враження.Схід_сонця.jpg" />
+    <None Remove="Images\Втеча_Святої_Родини_в_Єгипет.jpg" />
+    <None Remove="Images\Геркулес_на_перетині_шляхів.jpg" />
     <None Remove="Images\Глек_золото_і_дві_мушлі_наутілуса.jpg" />
+    <None Remove="Images\Готичний_собор_на_березі.jpg" />
+    <None Remove="Images\Дрезденський_триптих.jpg" />
+    <None Remove="Images\Жінка_в_зеленому.jpg" />
+    <None Remove="Images\Жінка_з_парасолькою.jpg" />
+    <None Remove="Images\Кабінет_для_нумізмата.jpg" />
+    <None Remove="Images\Кабінетний_столик.jpg" />
     <None Remove="Images\Келих_з_морським_конем.jpg" />
+    <None Remove="Images\Крик.jpg" />
+    <None Remove="Images\Кубок_Сімона.JPG" />
+    <None Remove="Images\Ліплений_декор_надгробкової_каплиці_Адама_Єроніма_Сенявського.jpg" />
+    <None Remove="Images\Лука_делла_Роббіа.jpg" />
+    <None Remove="Images\Малий_часослов_герцога_Беррійського.jpg" />
+    <None Remove="Images\Мона_Ліза.jpg" />
     <None Remove="Images\Мучеництво_святого_Матвія.jpg" />
+    <None Remove="Images\Навернення_Савла.jpg" />
+    <None Remove="Images\Наумбурзький_собор.jpg" />
+    <None Remove="Images\Обкладинка_євангелія.jpg" />
+    <None Remove="Images\Персей.jpg" />
     <None Remove="Images\Покликання апостола Матвія.jpg" />
     <None Remove="Images\Покликання апостола Матвія.png" />
     <None Remove="Images\Покликання_апостола_Матвія.jpg" />
     <None Remove="Images\Рельєфи_на_надгробку_родини_Вальє.jpg" />
+    <None Remove="Images\Розкішний_часослов_герцога_Беррійського.jpg" />
+    <None Remove="Images\Рука_що_благословляє.jpg" />
+    <None Remove="Images\Сагайдачний_panoramio.jpg" />
+    <None Remove="Images\Свобода_що_веде_народ.jpg" />
+    <None Remove="Images\Святий_Прокл_Болонський.jpg" />
+    <None Remove="Images\Тайна_вечеря.jpg" />
+    <None Remove="Images\Тераса_в_Сент-Адресс.jpg" />
+    <None Remove="Images\Хрещення_Христа.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,20 +84,55 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\barokko-kartiny-1.jpg" />
-    <Resource Include="Images\barokko-kartiny-2.jpg" />
+    <Resource Include="Images\24.jpg" />
+    <Resource Include="Images\ChurchOfImmaculateConceptionOfVirginMaryIinHorodenka.jpg" />
+    <Resource Include="Images\Jardin_du_Musee_Rodin_Paris_Le_Penseur.jpg" />
+    <Resource Include="Images\Michelangelos_David.jpg" />
+    <Resource Include="Images\Others\BackGround.png" />
     <Resource Include="Images\Others\Marble001_2K_Color.jpg" />
     <Resource Include="Images\Others\pause.png" />
     <Resource Include="Images\Others\play.png" />
     <Resource Include="Images\Others\rewind-arrows –next.png" />
     <Resource Include="Images\Others\rewind-arrows.png" />
     <Resource Include="Images\Others\skip.png" />
+    <Resource Include="Images\upturnedhouse.jpg" />
+    <Resource Include="Images\Іван_Хреститель.jpg" />
+    <Resource Include="Images\Арраси.JPG" />
+    <Resource Include="Images\Богоматір_на_троні_Собор_у_Шартрі.jpg" />
+    <Resource Include="Images\Вітрувіанська_людина.jpg" />
     <Resource Include="Images\Веронські_мармурові_леви.jpg" />
+    <Resource Include="Images\Враження.Схід_сонця.jpg" />
+    <Resource Include="Images\Втеча_Святої_Родини_в_Єгипет.jpg" />
+    <Resource Include="Images\Геркулес_на_перетині_шляхів.jpg" />
     <Resource Include="Images\Глек_золото_і_дві_мушлі_наутілуса.jpg" />
+    <Resource Include="Images\Готичний_собор_на_березі.jpg" />
+    <Resource Include="Images\Дрезденський_триптих.jpg" />
+    <Resource Include="Images\Жінка_в_зеленому.jpg" />
+    <Resource Include="Images\Жінка_з_парасолькою.jpg" />
+    <Resource Include="Images\Кабінет_для_нумізмата.jpg" />
+    <Resource Include="Images\Кабінетний_столик.jpg" />
     <Resource Include="Images\Келих_з_морським_конем.jpg" />
+    <Resource Include="Images\Крик.jpg" />
+    <Resource Include="Images\Кубок_Сімона.JPG" />
+    <Resource Include="Images\Ліплений_декор_надгробкової_каплиці_Адама_Єроніма_Сенявського.jpg" />
+    <Resource Include="Images\Лука_делла_Роббіа.jpg" />
+    <Resource Include="Images\Малий_часослов_герцога_Беррійського.jpg" />
+    <Resource Include="Images\Мона_Ліза.jpg" />
     <Resource Include="Images\Мучеництво_святого_Матвія.jpg" />
+    <Resource Include="Images\Навернення_Савла.jpg" />
+    <Resource Include="Images\Наумбурзький_собор.jpg" />
+    <Resource Include="Images\Обкладинка_євангелія.jpg" />
+    <Resource Include="Images\Персей.jpg" />
     <Resource Include="Images\Покликання_апостола_Матвія.jpg" />
     <Resource Include="Images\Рельєфи_на_надгробку_родини_Вальє.jpg" />
+    <Resource Include="Images\Розкішний_часослов_герцога_Беррійського.jpg" />
+    <Resource Include="Images\Рука_що_благословляє.jpg" />
+    <Resource Include="Images\Сагайдачний_panoramio.jpg" />
+    <Resource Include="Images\Свобода_що_веде_народ.jpg" />
+    <Resource Include="Images\Святий_Прокл_Болонський.jpg" />
+    <Resource Include="Images\Тайна_вечеря.jpg" />
+    <Resource Include="Images\Тераса_в_Сент-Адресс.jpg" />
+    <Resource Include="Images\Хрещення_Христа.jpg" />
   </ItemGroup>
 
 </Project>

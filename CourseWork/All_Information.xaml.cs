@@ -37,8 +37,8 @@ namespace CourseWork
             {
                 case ExhibitType.Sculpture:
                     {
-                        imageBrush.ImageSource = UpdateImage("ImageOther/Sculpture001_1K_Color.jpg");
-                        imageBrush.Opacity = 0.5;
+                        imageBrush.ImageSource = UpdateImage("ImageOther/SculptureBackground.jpg");
+                        imageBrush.Opacity = 0.4;
                         GridAll.Background = imageBrush;
 
                     } 
@@ -52,7 +52,7 @@ namespace CourseWork
                     break;
                 case ExhibitType.AppliedArt:
                     {
-                        imageBrush.ImageSource = UpdateImage("ImageOther/AppliedArt001_1K_Color.jpg");
+                        imageBrush.ImageSource = UpdateImage("ImageOther/BackGround.png");
                         imageBrush.Opacity = 0.5;
                         GridAll.Background = imageBrush;
                     }

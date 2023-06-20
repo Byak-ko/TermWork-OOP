@@ -79,13 +79,21 @@ namespace CourseWork
                 exhibitsToDisplay = GetExhibitsByAttributes();
             }
 
+
             exhibitsToDisplay.Sort((x, y) => x.Date.CompareTo(y.Date));
 
-            if (ListRadioButton.IsChecked == true)
+            if (exhibitsToDisplay.Count == 0)
+            {
+                MessageBox.Show("Не вдалося знайти експонатів за задиними атрибутами, спробуйте інші");
+
+            }
+
+            else if (ListRadioButton.IsChecked == true)
             {
                 ExhibitViewer exhibitViewer = new ExhibitViewer(exhibitsToDisplay);
                 exhibitViewer.Show();
             }
+
             else
             {
                 ExhibitViewerAuto exhibitViewerAuto = new ExhibitViewerAuto(exhibitsToDisplay);
@@ -155,12 +163,14 @@ namespace CourseWork
                     newExhibits.Where
                         (exhibit => exhibit.GetCategoryTypeOfExhibit() == exhibitType).ToList();
             }
-            if (DateFrom.Text != "" && DateTo.Text != "")
+            if (DateFrom.Text != "")
             {
                 try
                 {
                     int dateFrom = Convert.ToInt32(DateFrom.Text);
-                    int dateTo = Convert.ToInt32(DateTo.Text);
+                    int dateTo = int.MaxValue;
+                    if (DateTo.Text != "")
+                        dateTo = Convert.ToInt32(DateTo.Text);
                     int difference = dateTo - dateFrom;
                     if (difference >= 0)
                         newExhibits = newExhibits.Where(exhibit => exhibit.Date >= dateFrom && exhibit.Date <= dateTo).ToList();

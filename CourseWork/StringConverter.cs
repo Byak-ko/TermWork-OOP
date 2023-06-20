@@ -42,13 +42,13 @@ namespace CourseWork
             switch (movement)
             {
                 case ExhibitType.Painting:
-                    exhibitType = "Бароко";
+                    exhibitType = "Живопис";
                     break;
                 case ExhibitType.AppliedArt:
-                    exhibitType = "Сучасне мистецтво";
+                    exhibitType = "Прикладне мистецтво";
                     break;
                 case ExhibitType.Sculpture:
-                    exhibitType = "Готичне мистецтво";
+                    exhibitType = "Скульптура";
                     break;
             }
             return exhibitType;
